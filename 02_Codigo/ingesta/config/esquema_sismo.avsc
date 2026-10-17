@@ -1,0 +1,30 @@
+{
+  "type": "record",
+  "name": "SismoProcesado",
+  "namespace": "intec.practica.nifi",
+  "fields": [
+    {"name": "evento_id",               "type": "string"},
+    {"name": "fecha_evento_utc",        "type": ["null", "string"], "default": null},
+    {"name": "magnitud",                "type": "double"},
+    {"name": "tipo_magnitud",           "type": ["null", "string"], "default": null},
+    {"name": "categoria",               "type": "string"},
+    {"name": "nivel_alerta",            "type": "string"},
+    {"name": "prioridad",               "type": ["null", "string"], "default": null},
+    {"name": "tipo_evento",             "type": ["null", "string"], "default": null},
+    {"name": "origen",                  "type": ["null", "string"], "default": null},
+    {"name": "lugar",                   "type": ["null", "string"], "default": null},
+    {"name": "latitud",                 "type": ["null", "double"], "default": null},
+    {"name": "longitud",                "type": ["null", "double"], "default": null},
+    {"name": "profundidad_km",          "type": ["null", "double"], "default": null},
+    {"name": "estado_revision",         "type": ["null", "string"], "default": null},
+    {"name": "alerta_tsunami",          "type": ["null", "int"],    "default": null},
+    {"name": "significancia",           "type": ["null", "int"],    "default": null},
+    {"name": "reportes_sentido",        "type": ["null", "int"],    "default": null},
+    {"name": "red_sismica",             "type": ["null", "string"], "default": null},
+    {"name": "tiempo_epoch_ms",         "type": ["null", "long"],   "default": null},
+    {"name": "fuente",                  "type": ["null", "string"], "default": null},
+    {"name": "timestamp_procesamiento", "type": ["null", "string"], "default": null},
+    {"name": "flowfile_uuid",           "type": ["null", "string"], "default": null},
+    {"name": "url_detalle",             "type": ["null", "string"], "default": null}
+  ]
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "operation": "shift",
+    "spec": {
+      "id": "evento_id",
+      "properties": {
+        "mag": "magnitud",
+        "magType": "tipo_magnitud",
+        "place": "lugar",
+        "time": "tiempo_epoch_ms",
+        "type": "tipo_evento",
+        "status": "estado_revision",
+        "tsunami": "alerta_tsunami",
+        "sig": "significancia",
+        "net": "red_sismica",
+        "felt": "reportes_sentido",
+        "url": "url_detalle"
+      },
+      "geometry": {
+        "coordinates": {
+          "0": "longitud",
+          "1": "latitud",
+          "2": "profundidad_km"
+        }
+      }
+    }
+  },
+  {
+    "operation": "default",
+    "spec": {
+      "fecha_evento_utc": "${fecha_evento_utc}",
+      "categoria": "${categoria}",
+      "nivel_alerta": "${nivel_alerta}",
+      "prioridad": "${prioridad}",
+      "origen": "${origen}",
+      "fuente": "${fuente}",
+      "timestamp_procesamiento": "${timestamp_procesamiento}",
+      "flowfile_uuid": "${uuid}"
+    }
+  }
+]

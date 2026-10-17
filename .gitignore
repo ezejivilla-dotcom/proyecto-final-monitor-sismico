@@ -1,0 +1,32 @@
+# Datos generados (se reproducen con los scripts)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Secretos y entorno local
+.env
+*.pem
+
+# Volúmenes / estado de contenedores
+volumes/
+pgdata/
+nifi-state/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# SO / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Backups locales
+data/backups/
+
+# Copia local del paquete de entrega y zips generados
+LCD301_ProyectoIntegrador_*/
+*.zip

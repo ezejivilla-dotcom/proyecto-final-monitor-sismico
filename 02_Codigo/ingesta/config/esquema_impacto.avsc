@@ -1,0 +1,15 @@
+{
+  "type": "record",
+  "name": "ImpactoSismo",
+  "namespace": "sismos.ingesta",
+  "doc": "Campos de impacto humano que solo publica el GeoJSON del catalogo USGS (no el CSV). Se unen por evento_id en Spark.",
+  "fields": [
+    {"name": "evento_id",       "type": "string"},
+    {"name": "felt",            "type": ["null", "int"],    "default": null},
+    {"name": "cdi",             "type": ["null", "double"], "default": null},
+    {"name": "mmi",             "type": ["null", "double"], "default": null},
+    {"name": "alerta_pager",    "type": ["null", "string"], "default": null},
+    {"name": "tsunami",         "type": ["null", "int"],    "default": null},
+    {"name": "significancia",   "type": ["null", "int"],    "default": null}
+  ]
+}

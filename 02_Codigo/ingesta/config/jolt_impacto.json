@@ -1,0 +1,20 @@
+[
+  {
+    "operation": "shift",
+    "spec": {
+      "features": {
+        "*": {
+          "id": "[&1].evento_id",
+          "properties": {
+            "felt": "[&2].felt",
+            "cdi": "[&2].cdi",
+            "mmi": "[&2].mmi",
+            "alert": "[&2].alerta_pager",
+            "tsunami": "[&2].tsunami",
+            "sig": "[&2].significancia"
+          }
+        }
+      }
+    }
+  }
+]
